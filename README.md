@@ -1,46 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Task Manager
 
-## Available Scripts
+A simple application to perform CRUD operations on tasks.
 
-In the project directory, you can run:
+## Run Locally
 
-### `npm start`
+Install dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+  npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Start the server
 
-### `npm test`
+```bash
+  npm run start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run the tests
 
-### `npm run build`
+```bash
+  npm test
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Assumptions and Limitations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* The end date is not accounting for time, and if the current date is selected, the task will not be shown as overdue.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* The sort function is sorting in ascending order, I did not do the descending order but it could be implemented easily. 
 
-### `npm run eject`
+* For testing purposes, users list was created. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* The state management is done in functional components, and but could be better in redux or mobx when implemented with back-end and user-management.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* I lost my internet for a day, so I could not do the git history.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Code structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I tried to keep the design as simple and neat as possible and kept simple css without using any UI library. I am familiar with bootstrap and ant design. I tried to avoid code duplication and used the same form for creating and editing a task. I do think that If i did the edit functionality in the table row, it would be better.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
